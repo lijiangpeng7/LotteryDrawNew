@@ -1,6 +1,6 @@
 {
   "global": {
-    "globalAutoLayerMarkEnable": false
+    "globalAutoLayerMarkEnable": true
   },
   "170d3f571d5": {
     "backgroundX": 0,
