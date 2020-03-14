@@ -98,21 +98,15 @@ var Main = (function (_super) {
     };
     Main.prototype.runGame = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var result, userInfo;
+            var userInfo;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.loadResource()];
                     case 1:
                         _a.sent();
                         this.createGameScene();
-                        return [4 /*yield*/, RES.getResAsync("description_json")
-                            // this.startAnimation(result);
-                            // await platform.login();
-                        ];
-                    case 2:
-                        result = _a.sent();
                         return [4 /*yield*/, platform.getUserInfo()];
-                    case 3:
+                    case 2:
                         userInfo = _a.sent();
                         console.log(userInfo);
                         return [2 /*return*/];

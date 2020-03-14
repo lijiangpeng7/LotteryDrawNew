@@ -53,6 +53,7 @@ class Main extends eui.UILayer {
 
 
         this.runGame().catch(e => {
+            console.log("runGame error");
             console.log(e);
         })
     }
@@ -60,11 +61,11 @@ class Main extends eui.UILayer {
     private async runGame() {
         await this.loadResource()
         this.createGameScene();
-        const result = await RES.getResAsync("description_json")
+        // const result = await RES.getResAsync("description_json")
         // this.startAnimation(result);
         // await platform.login();
-        const userInfo = await platform.getUserInfo();
-        console.log(userInfo);
+        // const userInfo = await platform.getUserInfo();
+        // console.log(userInfo);
 
     }
 
@@ -78,6 +79,7 @@ class Main extends eui.UILayer {
             this.stage.removeChild(loadingView);
         }
         catch (e) {
+            console.log("loadResource error")
             console.error(e);
         }
     }

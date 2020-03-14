@@ -1,0 +1,23 @@
+[
+    {
+        "name": "ftpServer",
+        "host": "host",
+        "user": "username",
+        "password": "password",
+        "port": 21,
+        "protocol": "ftp",
+        "remotePath": "",
+        "passive": false,
+        "debug": false,
+        "privateKeyPath": null,
+        "ignoreDir": [
+            ".out/",
+            ".git/"
+        ],
+        "ignoreFileSuffix": [
+            "diff"
+        ],
+        "diffFile": "ftpdiff-1584173065771.diff",
+        "usediffFile": true
+    }
+]
