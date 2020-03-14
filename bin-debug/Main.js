@@ -93,22 +93,18 @@ var Main = (function (_super) {
         egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
         egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
         this.runGame().catch(function (e) {
+            console.log("runGame error");
             console.log(e);
         });
     };
     Main.prototype.runGame = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var userInfo;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.loadResource()];
                     case 1:
                         _a.sent();
                         this.createGameScene();
-                        return [4 /*yield*/, platform.getUserInfo()];
-                    case 2:
-                        userInfo = _a.sent();
-                        console.log(userInfo);
                         return [2 /*return*/];
                 }
             });
@@ -136,6 +132,7 @@ var Main = (function (_super) {
                         return [3 /*break*/, 5];
                     case 4:
                         e_1 = _a.sent();
+                        console.log("loadResource error");
                         console.error(e_1);
                         return [3 /*break*/, 5];
                     case 5: return [2 /*return*/];
