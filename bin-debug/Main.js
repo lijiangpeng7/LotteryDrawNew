@@ -105,15 +105,14 @@ var Main = (function (_super) {
                     case 1:
                         _a.sent();
                         this.createGameScene();
-                        return [4 /*yield*/, RES.getResAsync("description_json")];
+                        return [4 /*yield*/, RES.getResAsync("description_json")
+                            // this.startAnimation(result);
+                            // await platform.login();
+                        ];
                     case 2:
                         result = _a.sent();
-                        this.startAnimation(result);
-                        return [4 /*yield*/, platform.login()];
-                    case 3:
-                        _a.sent();
                         return [4 /*yield*/, platform.getUserInfo()];
-                    case 4:
+                    case 3:
                         userInfo = _a.sent();
                         console.log(userInfo);
                         return [2 /*return*/];
@@ -225,12 +224,12 @@ var Main = (function (_super) {
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
      * Create a Bitmap object according to name keyword.As for the property of name please refer to the configuration file of resources/resource.json.
      */
-    Main.prototype.createBitmapByName = function (name) {
-        var result = new egret.Bitmap();
-        var texture = RES.getRes(name);
-        result.texture = texture;
-        return result;
-    };
+    // private createBitmapByName(name: string): egret.Bitmap {
+    //     let result = new egret.Bitmap();
+    //     let texture: egret.Texture = RES.getRes(name);
+    //     result.texture = texture;
+    //     return result;
+    // }
     /**
      * 描述文件加载成功，开始播放动画
      * Description file loading is successful, start to play the animation
