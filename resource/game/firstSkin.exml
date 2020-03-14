@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="firstSkin" width="750" height="1366" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Group>
+        <e:Rect id="back" width="750" height="1366" fillColor="0xdd2a2a" fillAlpha="0.5" strokeColor="0x424242" enabled="true" visible="false">
+        </e:Rect>
+			<e:Image id="bg" width="100%" x="0" y="0" source="bg_png"/>
+			<e:Image id="topImg" width="100%" y="0" anchorOffsetX="0" anchorOffsetY="0" source="title_png" fillMode="scale" x="0" scaleY="1.2"/>
+			<e:Image id="noticeBg" width="520" height="43" x="65" y="491.2" source="barrage_bg_png" anchorOffsetX="0" anchorOffsetY="0" scaleX="1.2" scaleY="1.2"/>
+			<e:Image id="notice1" width="263.5" height="21" x="216.55" y="504.4" scaleX="1.2" scaleY="1.2" anchorOffsetX="0" source="barrage_0_png"/>
+			<e:Image width="100%" x="0" y="571.33" source="circle_bg_png" scaleY="1.2"/>
+			<e:Image width="563" height="563" y="590.43" source="circle_outside_png" scaleX="1.1" scaleY="1.1" horizontalCenter="0"/>
+			<e:Image id="circle_light" width="530" height="530" x="83.15" y="608.58" source="circle_light_png" scaleX="1.1" scaleY="1.1"/>
+			<e:Image id="circle_inside" width="469" height="469" x="116.7" y="642.13" source="circle_inside_png" scaleX="1.1" scaleY="1.1"/>
+			<e:Image id="btn_start" width="210" height="164" x="259.5" y="812" scaleX="1.1" scaleY="1.1" source="btn_start_png"/>
+			<e:Image id="pointer" width="164" height="209" x="326.5" y="887.9" source="pointer_png"/>
+
+
+    </e:Group>
+</e:Skin>
