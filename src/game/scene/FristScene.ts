@@ -9,13 +9,19 @@ class FirstScene extends Scene{
     notice1: eui.Image;
     public onComplete() {
         egret.log("第一个场景加载完成");
+        this.noticeChange();
+        var sound:egret.Sound = RES.getRes("audio_bg_mp3");
+        sound.play();
+    }
+    //notice栏 切换
+    private noticeChange() {
         var noticeLen:any = 0;
-        let that = this;
+        var that = this;
         setInterval(function(){
             if(noticeLen == 8) {
                 noticeLen = 0;
             }
-            console.log(RES.getRes("barrage_" + noticeLen + "_png"));
+            // console.log(RES.getRes("barrage_" + noticeLen + "_png"));
             that.notice1.texture = RES.getRes("barrage_" + noticeLen + "_png");
             noticeLen++;
         }, 2000);

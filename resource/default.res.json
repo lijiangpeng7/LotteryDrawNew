@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,again_bg_png,bg_png,btn_again_png,btn_reward_png,btn_start_png,circle_bg_png,circle_inside_png,circle_light_png,circle_outside_png,pack_png,pointer_png,title_png,barrage_0_png,barrage_1_png,barrage_2_png,barrage_3_png,barrage_4_png,barrage_5_png,barrage_6_png,barrage_7_png,barrage_bg_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,again_bg_png,bg_png,btn_again_png,btn_reward_png,btn_start_png,circle_bg_png,circle_inside_png,circle_light_png,circle_outside_png,pack_png,pointer_png,title_png,barrage_0_png,barrage_1_png,barrage_2_png,barrage_3_png,barrage_4_png,barrage_5_png,barrage_6_png,barrage_7_png,barrage_bg_png,audio_bg_mp3,audio_click_mp3,audio_rotation_mp3,audio_victory_mp3",
 			"name": "preload"
 		},
 		{
@@ -244,6 +244,26 @@
 			"url": "assets/lotteryImg/barrage/barrage_bg.png",
 			"type": "image",
 			"name": "barrage_bg_png"
+		},
+		{
+			"url": "assets/audio/audio_bg.mp3",
+			"type": "sound",
+			"name": "audio_bg_mp3"
+		},
+		{
+			"url": "assets/audio/audio_click.mp3",
+			"type": "sound",
+			"name": "audio_click_mp3"
+		},
+		{
+			"url": "assets/audio/audio_rotation.mp3",
+			"type": "sound",
+			"name": "audio_rotation_mp3"
+		},
+		{
+			"url": "assets/audio/audio_victory.mp3",
+			"type": "sound",
+			"name": "audio_victory_mp3"
 		}
 	]
 }

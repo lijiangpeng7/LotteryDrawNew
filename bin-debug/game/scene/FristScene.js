@@ -17,25 +17,22 @@ var FirstScene = (function (_super) {
     }
     FirstScene.prototype.onComplete = function () {
         egret.log("第一个场景加载完成");
+        this.noticeChange();
+        var sound = RES.getRes("audio_bg_mp3");
+        sound.play();
+    };
+    //notice栏 切换
+    FirstScene.prototype.noticeChange = function () {
         var noticeLen = 0;
         var that = this;
         setInterval(function () {
             if (noticeLen == 8) {
                 noticeLen = 0;
             }
-            console.log(RES.getRes("barrage_" + noticeLen + "_png"));
+            // console.log(RES.getRes("barrage_" + noticeLen + "_png"));
             that.notice1.texture = RES.getRes("barrage_" + noticeLen + "_png");
             noticeLen++;
         }, 2000);
-        // //创建一个计时器对象
-        // var timer:egret.Timer = new egret.Timer(500,5);
-        // //注册事件侦听器
-        // timer.addEventListener(egret.TimerEvent.TIMER, function(){
-        //     noticeLen++;
-        //     console.log(noticeLen);
-        // }, this);
-        // //开始计时
-        // timer.start();
     };
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
